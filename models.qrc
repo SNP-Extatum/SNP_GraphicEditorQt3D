@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/test">
+        <file>BlenderMonkey/Suzanne.blend</file>
+        <file>BlenderMonkey/Suzanne.mtl</file>
+        <file>BlenderMonkey/Suzanne.obj</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>home/HOUSE.mtl</file>
+        <file>home/HOUSE.obj</file>
+        <file>SkyBox/skybox_negx.png</file>
+        <file>SkyBox/skybox_negy.png</file>
+        <file>SkyBox/skybox_negz.png</file>
+        <file>SkyBox/skybox_posx.png</file>
+        <file>SkyBox/skybox_posy.png</file>
+        <file>SkyBox/skybox_posz.png</file>
+    </qresource>
+</RCC>
