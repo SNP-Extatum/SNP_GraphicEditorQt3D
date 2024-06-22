@@ -8,7 +8,6 @@ Cuboid::Cuboid(Qt3DCore::QNode* parent) {
   p_entity->addComponent(p_mesh);
   p_entity->addComponent(p_material);
   p_entity->addComponent(p_transform);
-  qDebug() << "create";
   m_updateParams();
 }
 
@@ -26,8 +25,19 @@ Cuboid::Cuboid(QVector3D coord, QVector3D rotation, QVector3D size, QColor color
   p_entity->addComponent(p_mesh);
   p_entity->addComponent(p_material);
   p_entity->addComponent(p_transform);
+  qDebug() << "create";
 
   m_updateParams();
+}
+
+Cuboid::~Cuboid() {
+  // p_entity->removeComponent(p_mesh);
+  // p_entity->removeComponent(p_material);
+  // p_entity->removeComponent(p_transform);
+  // delete p_entity;
+  // delete p_mesh;
+  // delete p_material;
+  // delete p_transform;
 }
 
 void Cuboid::m_updateParams() {

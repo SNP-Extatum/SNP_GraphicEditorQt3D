@@ -11,7 +11,7 @@ class ModuleCamera : Qt3DCore::QEntity {
   Q_OBJECT
  public:
   ModuleCamera(Qt3DCore::QNode* parent = Q_NULLPTR, float aspect = 1);
-
+  ~ModuleCamera();
   void setCamera(Qt3DRender::QCamera* newCamera);
 
   float linearSpeed() const;

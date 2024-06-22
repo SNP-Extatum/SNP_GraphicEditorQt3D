@@ -2,9 +2,9 @@
 
 BasicFigure::BasicFigure() {}
 
-float BasicFigure::getScale() const { return p_scale; }
+float BasicFigure::get_scale() const { return p_scale; }
 
-void BasicFigure::setScale(float newScale) {
+void BasicFigure::set_scale(float newScale) {
   p_scale = newScale;
   m_updateParams();
 }
@@ -38,3 +38,12 @@ void BasicFigure::set_coord(const QVector3D& new_coord) {
 }
 
 void BasicFigure::m_updateParams() {}
+
+void BasicFigure::deleteObject() {
+  foreach (Qt3DCore::QComponent* component, p_entity->components()) {
+	p_entity->removeComponent(component);
+	delete (component);
+	component = NULL;
+  }
+  qDebug() << "DELETING";
+}

@@ -122,6 +122,38 @@ ModuleCamera::ModuleCamera(Qt3DCore::QNode* parent, float aspect) : Qt3DCore::QE
   connect(p_frameAction, SIGNAL(triggered(float)), this, SLOT(s_frameActionTriggered(float)));
 }
 
+ModuleCamera::~ModuleCamera() {
+  delete p_mouseDevice;
+  delete p_keyboardDevice;
+  delete p_logicalDevice;
+
+  delete p_keyWAction;
+  delete p_keySAction;
+  delete p_keyAAction;
+  delete p_keyDAction;
+  delete p_keyShiftAction;
+  delete p_keyCtrlAction;
+  delete p_keyLeftMouseAction;
+  delete p_keyRightMouseAction;
+
+  delete p_keyWInput;
+  delete p_keySInput;
+  delete p_keyAInput;
+  delete p_keyDInput;
+  delete p_keyShiftInput;
+  delete p_keyCtrlInput;
+  delete p_keyLeftMouseInput;
+  delete p_keyRightMouseInput;
+
+  delete p_XAxis;
+  delete p_YAxis;
+
+  delete p_mouseXInput;
+  delete p_mouseYInput;
+
+  delete p_frameAction;
+}
+
 void ModuleCamera::setCamera(Qt3DRender::QCamera* newCamera) { p_camera = newCamera; }
 
 float ModuleCamera::linearSpeed() const { return p_linearSpeed; }

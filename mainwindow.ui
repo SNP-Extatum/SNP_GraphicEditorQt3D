@@ -17,8 +17,11 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QTabWidget" name="tabWidget_main">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Cubic">
        <attribute name="title">
@@ -196,7 +199,7 @@
                <string>X: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -218,7 +221,7 @@
                <string>Y: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -240,7 +243,7 @@
                <string>Z: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -290,7 +293,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -312,7 +315,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -334,7 +337,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -590,7 +593,7 @@
                <double>255.000000000000000</double>
               </property>
               <property name="singleStep">
-               <double>5.000000000000000</double>
+               <double>10.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -612,7 +615,7 @@
                <double>255.000000000000000</double>
               </property>
               <property name="singleStep">
-               <double>5.000000000000000</double>
+               <double>10.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -634,7 +637,7 @@
                <double>255.000000000000000</double>
               </property>
               <property name="singleStep">
-               <double>5.000000000000000</double>
+               <double>10.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -811,7 +814,7 @@
                <string>X: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -833,7 +836,7 @@
                <string>Y: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -855,7 +858,7 @@
                <string>Z: </string>
               </property>
               <property name="suffix">
-               <string> units</string>
+               <string>°</string>
               </property>
               <property name="decimals">
                <number>1</number>
@@ -880,7 +883,7 @@
           <item>
            <widget class="QLabel" name="label_12">
             <property name="text">
-             <string>Параметры сферы</string>
+             <string>Параметры тора</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -890,7 +893,7 @@
           <item>
            <widget class="QDoubleSpinBox" name="sb_torus_radius_big">
             <property name="prefix">
-             <string>Радиус: </string>
+             <string>Радиус (больший): </string>
             </property>
             <property name="suffix">
              <string> units</string>
@@ -912,7 +915,7 @@
           <item>
            <widget class="QDoubleSpinBox" name="sb_torus_radius_smol">
             <property name="prefix">
-             <string>Радиус: </string>
+             <string>Радиус (меньший): </string>
             </property>
             <property name="suffix">
              <string> units</string>
@@ -992,7 +995,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -1014,7 +1017,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -1036,7 +1039,7 @@
              <double>255.000000000000000</double>
             </property>
             <property name="singleStep">
-             <double>5.000000000000000</double>
+             <double>10.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -1098,7 +1101,7 @@
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Создать Сферу</string>
+             <string>Создать Тор</string>
             </property>
            </widget>
           </item>
@@ -1215,7 +1218,7 @@
             <string>X: </string>
            </property>
            <property name="suffix">
-            <string> units</string>
+            <string>°</string>
            </property>
            <property name="decimals">
             <number>1</number>
@@ -1237,7 +1240,7 @@
             <string>Y: </string>
            </property>
            <property name="suffix">
-            <string> units</string>
+            <string>°</string>
            </property>
            <property name="decimals">
             <number>1</number>
@@ -1259,7 +1262,7 @@
             <string>Z: </string>
            </property>
            <property name="suffix">
-            <string> units</string>
+            <string>°</string>
            </property>
            <property name="decimals">
             <number>1</number>
@@ -1331,6 +1334,9 @@
         </layout>
        </widget>
        <widget class="QPushButton" name="pb_CreateObject">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -1385,6 +1391,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="pb_createHouse">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="text">
            <string>Да будет домик</string>
           </property>
@@ -1424,6 +1433,7 @@
     </property>
     <addaction name="action_create"/>
     <addaction name="action_save"/>
+    <addaction name="action_saveAs"/>
     <addaction name="action_load"/>
     <addaction name="separator"/>
     <addaction name="action_exit"/>
@@ -1435,20 +1445,40 @@
    <property name="text">
     <string>Создать</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="action_save">
    <property name="text">
     <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="action_load">
    <property name="text">
     <string>Загрузить</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
   <action name="action_exit">
    <property name="text">
     <string>Выйти</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="action_saveAs">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
  </widget>
