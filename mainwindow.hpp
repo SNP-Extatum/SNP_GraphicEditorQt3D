@@ -79,7 +79,6 @@ class MainWindow : public QMainWindow {
   ///
   bool prepairToSave();
   Errors decodFrom();
-  bool save();
   bool saveBIN();
   bool saveBIN(QString path);
   bool getNewPath(QString& path);
